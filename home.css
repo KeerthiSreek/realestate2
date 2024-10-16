@@ -1,0 +1,217 @@
+/* General Styles */
+body {
+    font-family: 'League Spartan', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Light gray background */
+    color: #333; /* Dark gray text */
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #007BFF; /* Blue */
+    padding: 20px 0;
+  }
+  
+  .logo {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .navbar-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+  }
+  
+  .navbar-link.active {
+    background-color: #0056b3; /* Darker blue for active link */
+    border-radius: 5px;
+  }
+  
+  .btn-secondary {
+    background-color: #0056b3; /* Darker blue */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('your-hero-image.jpg') no-repeat center center; /* Replace with your hero image */
+    background-size: cover; /* Cover the entire section */
+    color: #fff;
+    padding: 100px 0; /* Spacing for the hero section */
+    text-align: center;
+  }
+  
+  .hero-title {
+    font-size: 48px; /* Large font for title */
+    margin-bottom: 20px;
+  }
+  
+  .hero-text {
+    font-size: 18px; /* Font size for subtitle */
+    margin-bottom: 30px;
+  }
+  
+  /* Featured Properties Section */
+  .featured-properties {
+    padding: 60px 0;
+    background-color: #fff; /* White background for properties */
+  }
+  
+  .featured-properties .section-title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .properties-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid layout */
+    gap: 20px; /* Space between cards */
+  }
+  
+  .property-card {
+    background-color: #f8f9fa; /* Light gray background for property card */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    overflow: hidden; /* Prevent overflow */
+    text-align: center; /* Center the text */
+  }
+  
+  .property-image {
+    width: 100%; /* Make image responsive */
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Cover the area without distortion */
+  }
+  
+  .property-title {
+    font-size: 20px; /* Title size */
+    margin: 10px 0;
+  }
+  
+  .property-price {
+    font-size: 18px; /* Price size */
+    color: #007BFF; /* Blue color for price */
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #0056b3; /* Darker blue */
+    color: #fff;
+    padding: 40px 0;
+  }
+  
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+  }
+  
+  .footer-brand {
+    flex: 1;
+    max-width: 300px;
+  }
+  
+  .footer-brand .logo {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .footer-text {
+    color: #cfe2ff; /* Lighter blue */
+  }
+  
+  .footer-list {
+    flex: 1;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-list-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-link {
+    text-decoration: none;
+    color: #cfe2ff; /* Lighter blue */
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .footer-link:hover {
+    color: #fff;
+  }
+  
+  .social-list {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .social-list .social-link {
+    font-size: 20px;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .copyright {
+    color: #cfe2ff; /* Lighter blue */
+  }
+  
+  /* Back-to-top Button */
+  .back-top-btn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: #007BFF; /* Blue back-to-top button */
+    color: #fff;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-top-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .properties-grid {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust grid for smaller screens */
+    }
+  
+    .footer-top {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  

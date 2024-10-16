@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Details</title>
+    <link rel="stylesheet" href="css/property1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* General page styles */
+        body {
+            background: url('images/img1.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: rgba(44, 62, 80, 0.9); /* Dark background with transparency */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        /* Back Icon */
+        .back-icon {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 24px;
+            color: #fff;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .back-icon i {
+            margin-right: 8px;
+        }
+
+        .back-icon:hover {
+            color: #e74c3c; /* Change color on hover */
+        }
+
+        /* Property Detail Section */
+        .property-detail {
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: rgba(255, 255, 255, 0.9); /* Light box with transparency */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .property-detail img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .property-title {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        .property-description {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #7f8c8d;
+        }
+
+        .property-highlights {
+            margin-bottom: 20px;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #34495e;
+        }
+
+        .card-price {
+            font-size: 24px;
+            color: #e74c3c;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .call-owner-btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #e74c3c;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .call-owner-btn:hover {
+            background-color: #c0392b;
+        }
+
+        /* Star Rating */
+        .star-rating {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .star {
+            color: #f39c12; /* Gold color for the stars */
+            font-size: 24px;
+            margin-right: 5px;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: rgba(44, 62, 80, 0.9); /* Dark footer */
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer a {
+            color: #e74c3c;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <!-- Back Icon to Redirect to Property Page -->
+        <a href="property.html" class="back-icon">
+            <i class="fas fa-arrow-left"></i>
+        </a>
+        
+        <div class="header-container">
+            <h1>Real Estate Services</h1>
+            <p>Your partner in property management, sales, and sustainable development.</p>
+            <nav class="navbar container" data-navbar>
+                <ul class="navbar-list">
+                    <li><a href="home.html" class="navbar-link" data-nav-link>Home</a></li>
+                    <li><a href="aboutus.html" class="navbar-link" data-nav-link>About Us</a></li>
+                    <li><a href="services.html" class="navbar-link" data-nav-link>Services</a></li>
+                    <li><a href="property.html" class="navbar-link" data-nav-link>Property</a></li>
+                    <li><a href="contact.html" class="navbar-link" data-nav-link>Contact</a></li>
+                </ul>
+            </nav>
+
+            <a href="register.html" class="btn btn-secondary">Signup</a>
+            <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+                <ion-icon name="menu-outline" aria-hidden="true" class="menu-icon"></ion-icon>
+                <ion-icon name="close-outline" aria-hidden="true" class="close-icon"></ion-icon>
+            </button>
+        </div>
+      
+        <div class="header-container">
+            <h1>Spacious Villa with Ocean View</h1>
+        </div>
+    </header>
+
+    <!-- Property Detail Section -->
+    <section class="property-detail">
+        <img src="images/villa.jpg" alt="Spacious Villa with Ocean View">
+        <h2 class="property-title">Spacious Villa with Ocean View</h2>
+        <p class="property-description">Experience luxury living in this stunning villa, featuring breathtaking ocean views and top-of-the-line amenities.</p>
+
+        <div class="property-highlights">
+            <h3>Highlights:</h3>
+            <ul>
+                <li class="highlight">4 Bedrooms</li>
+                <li class="highlight">3 Bathrooms</li>
+                <li class="highlight">3000 sq ft</li>
+                <li class="highlight">Open Concept Living Area</li>
+                <li class="highlight">Private Pool</li>
+                <li class="highlight">Near Beach and Restaurants</li>
+            </ul>
+        </div>
+
+        <p class="card-price">90,00,000</p>
+
+        <div class="star-rating">
+            <i class="fas fa-star star"></i>
+            <i class="fas fa-star star"></i>
+            <i class="fas fa-star star"></i>
+            <i class="fas fa-star star"></i>
+            <i class="far fa-star star"></i> <!-- Half-star for rating -->
+        </div>
+
+        <a href="tel:000-111-22233" class="call-owner-btn">Call Owner</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Realestate. All rights reserved by <a href="#">keerthi</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
+

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realestate Testimonials & Projects</title>
+    <link rel="stylesheet" href="css/aboutus.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Ionicons for icons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+
+    <!-- Navbar Section -->
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <ion-icon name="home-outline"></ion-icon> Realestate
+            </a>
+
+            <nav class="navbar container" data-navbar>
+                <ul class="navbar-list">
+                    <li>
+                        <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+                    </li>
+                    <li>
+                        <a href="aboutus.html" class="navbar-link" data-nav-link>About Us</a>
+                    </li>
+                    <li>
+                        <a href="services.html" class="navbar-link" data-nav-link>Services</a>
+                    </li>
+                    <li>
+                        <a href="property.html" class="navbar-link" data-nav-link>Properties</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="navbar-link active" data-nav-link>Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <a href="login.html" class="btn btn-secondary">Signup</a>
+            <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+                <ion-icon name="menu-outline" aria-hidden="true" class="menu-icon"></ion-icon>
+                <ion-icon name="close-outline" aria-hidden="true" class="close-icon"></ion-icon>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial-container">
+                <div class="testimonial-card">
+                    <img src="images/80x801.jpg" alt="Customer 1">
+                    <h3>John Smith</h3>
+                    <p class="title">Homeowner</p>
+                    <p>"Realestate helped us find our dream home! Their team was professional and knowledgeable."</p>
+                </div>
+                <div class="testimonial-card">
+                    <img src="images/80x802.jpg" alt="Customer 2">
+                    <h3>Mary Johnson</h3>
+                    <p class="title">Investor</p>
+                    <p>"I made a great investment through Realestate. Their advice was invaluable."</p>
+                </div>
+                <div class="testimonial-card">
+                    <img src="images/80x803.jpg" alt="Customer 3">
+                    <h3>Tom Brown</h3>
+                    <p class="title">First-Time Buyer</p>
+                    <p>"As a first-time homebuyer, I was nervous, but Realestate guided me every step of the way."</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Previous Projects Section -->
+        <section class="previous-projects">
+            <h2>Our Previous Projects</h2>
+            <div class="project-container">
+                <div class="project-card">
+                    <h3>Luxury Apartment Complex</h3>
+                    <p>Completed: June 2023</p>
+                    <p>Location: Downtown City Center</p>
+                    <img src="images/A1 (2).jpg" alt="Project 1">
+                </div>
+                <div class="project-card">
+                    <h3>Modern Family Homes</h3>
+                    <p>Completed: March 2023</p>
+                    <p>Location: Suburban Area</p>
+                    <img src="images/A2 (2).jpg" alt="Project 2">
+                </div>
+                <div class="project-card">
+                    <h3>Commercial Office Space</h3>
+                    <p>Completed: January 2023</p>
+                    <p>Location: Business District</p>
+                    <img src="images/A3 (3).jpg" alt="Project 3">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="contact-info">
+                <p>Email: contact@realestate.com</p>
+                <p>Phone: +123 456 7890</p>
+                <p>Address: 123 Real Estate St, City, Country</p>
+            </div>
+        </div>
+        <p>&copy; 2024 Realestate. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+        const navToggler = document.querySelector("[data-nav-toggler]");
+        const navbar = document.querySelector("[data-navbar]");
+
+        navToggler.addEventListener("click", () => {
+            navbar.classList.toggle("active");
+            navToggler.classList.toggle("active");
+        });
+    </script>
+
+</body>
+</html>
+

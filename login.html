@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Real Estate Website</title>
+
+    <!-- Embedded CSS for the Login Page -->
+    <style>
+        /* General Styling */
+        body {
+            background-image: url('images/img1.jpg');
+            font-family: 'Poppins', sans-serif;
+            background-color: #f7f8fc;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Login Form Container */
+        .login__container {
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .login__title {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #333;
+            text-align: center;
+        }
+
+        /* Input Styles */
+        .login__input-box {
+            margin-bottom: 1rem;
+        }
+
+        .login__input-box label {
+            display: block;
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 0.3rem;
+        }
+
+        .login__input-box input {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            background: #f7f7f7;
+            transition: all 0.3s ease;
+        }
+
+        .login__input-box input:focus {
+            border-color: #7f56d9;
+            background: #fff;
+            box-shadow: 0 0 0 2px rgba(127, 86, 217, 0.2);
+        }
+
+        /* Button Styles */
+        .login__button {
+            width: 100%;
+            background-color: #7f56d9;
+            color: #fff;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .login__button:hover {
+            background-color: #6842c2;
+        }
+
+        /* Text and Links */
+        .login__text {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 1rem;
+        }
+
+        .login__link {
+            color: #7f56d9;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .login__link:hover {
+            text-decoration: underline;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 480px) {
+            .login__container {
+                padding: 1.5rem;
+            }
+
+            .login__title {
+                font-size: 1.75rem;
+            }
+
+            .login__button {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo"><i class='bx bxs-buildings'></i></a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="login section">
+            <div class="login__container container">
+                <h2 class="login__title">Login</h2>
+                <form action="index.html" method="POST" class="login__form">
+                    <div class="login__input-box">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="login__input-box">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    </div>
+                    <button type="submit" class="button login__button"><a href="index.html" style="text-decoration: none; color: white;">Login</a></button>
+                </form>
+                <p class="login__text">Don't have an account? <a href="index.html" class="login__link">Register here</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer section">
+        <div class="footer__container container">
+            <span class="footer__copy">
+            </span>
+        </div>
+    </footer>
+</body>
+</html>

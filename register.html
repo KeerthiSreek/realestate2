@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Real Estate Website</title>
+    
+    <!-- CSS Link (use the same styles as login page) -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <style>
+        /* General Styling */
+        body {
+            background-image: url('images/img1.jpg');
+            font-family: 'Poppins', sans-serif;
+            background-color: #f7f8fc;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Register Form Container */
+        .register__container {
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .register__title {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #333;
+            text-align: center;
+        }
+
+        /* Input Styles */
+        .register__input-box {
+            margin-bottom: 1rem;
+            text-align: left;
+        }
+
+        .register__input-box label {
+            display: block;
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 0.3rem;
+        }
+
+        .register__input-box input {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            background: #f7f7f7;
+            transition: all 0.3s ease;
+        }
+
+        .register__input-box input:focus {
+            border-color: #7f56d9;
+            background: #fff;
+            box-shadow: 0 0 0 2px rgba(127, 86, 217, 0.2);
+        }
+
+        /* Button Styles */
+        .register__button {
+            width: 100%;
+            background-color: #7f56d9;
+            color: #fff;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .register__button:hover {
+            background-color: #6842c2;
+        }
+
+        /* Text and Links */
+        .register__text {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 1rem;
+        }
+
+        .register__link {
+            color: #7f56d9;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .register__link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="register section">
+            <div class="register__container container">
+                <h2 class="register__title">Register</h2>
+                <form action="login.html" method="POST" class="register__form">
+                    <div class="register__input-box">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="register__input-box">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="register__input-box">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    </div>
+                    <div class="register__input-box">
+                        <label for="confirm_password">Confirm Password</label>
+                        <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm your password" required>
+                    </div>
+                    <button type="submit" class="button register__button"><a href="login.html" style="text-decoration: none; color: white;" >Register</a></button>
+                </form>
+                <p class="register__text">Already have an account? <a href="login.html" class="register__link">Login here</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer section">
+
+    </footer>
+</body>
+</html>
